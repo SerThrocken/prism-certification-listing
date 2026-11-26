@@ -1,0 +1,243 @@
+{
+ "claim": {
+  "languages": [
+   "en"
+  ],
+  "model": "vertex-gemini-2-5-flash",
+  "network": "internet",
+  "os": "Windows",
+  "pack": "core-status@0.1.0+sha256:7974dfe9735834a6d6a78263f01346449944a8cb7f8e76d1412a1d099e013509",
+  "runtime": "prism-core@1.0.0-phase1",
+  "suite": "S-prompt",
+  "tier": 2
+ },
+ "claim_context": {
+  "model": "vertex-gemini-2-5-flash",
+  "network": "internet",
+  "os": "Windows",
+  "tier": 2
+ },
+ "ended_at": "2026-11-15T09:26:10.586095+00:00",
+ "environment": {
+  "binding_set_hash": "sha256:a9c9cf727d3233cf677d8a209fda8a627104571e1919379b264b96de39b2b868",
+  "canary_cell": "real-prism-core",
+  "canary_subset_case_ids": [
+   "SP-01",
+   "SP-13",
+   "SP-19"
+  ],
+  "containers_running": 37,
+  "context_ceiling": "not reported by the Core API for this route; task context est_tokens_total recorded in context_est_tokens",
+  "context_est_tokens": 28363,
+  "core_boot_id": "e2eb6daf-718d-433d-b029-274fed4d1d0a",
+  "cpu": "AMD Ryzen 7 7840HS w/ Radeon 780M Graphics",
+  "definition_fingerprint": "sha256:452df6e142ec117afea9347a540bb93030b47cc578ed897e82f6b0aeb8bf397d",
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU, 8188 MiB, 621.24",
+  "languages": [
+   "en"
+  ],
+  "load_state": "under stated load: 37 containers running; Ollama resident at run start: nomic-embed-text:latest, prism-brain:latest",
+  "model": "vertex-gemini-2-5-flash",
+  "model_digest": "not-applicable: external LiteLLM route, no local model file",
+  "model_version": "vertex-gemini-2-5-flash",
+  "network": "internet",
+  "os": "Windows",
+  "os_version": "Microsoft Windows 11 Home build 26300",
+  "ram": "63.3 GiB",
+  "resident_models": [
+   {
+    "context_length": 2048,
+    "digest": "0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f",
+    "name": "nomic-embed-text:latest",
+    "size_vram": 323150151
+   },
+   {
+    "context_length": 8192,
+    "digest": "779f443d9dc2ec1cca13413d91d857ff063d706678dfe69c0c0d16ff68bbd942",
+    "name": "prism-brain:latest",
+    "size_vram": 3699994787
+   }
+  ],
+  "runtime": "prism-core",
+  "runtime_version": "1.0.0-phase1",
+  "spend_usd": 0.0076251999999999995,
+  "tier": 2,
+  "tokens_in": 25384,
+  "tokens_out": 4
+ },
+ "form": "shared",
+ "negotiation": {
+  "absent_optional": [],
+  "definition_fingerprint": "sha256:452df6e142ec117afea9347a540bb93030b47cc578ed897e82f6b0aeb8bf397d",
+  "satisfied": [
+   "core_status"
+  ]
+ },
+ "outcome": {
+  "status": "failed",
+  "summary": "Run failed with 6 step(s) recorded."
+ },
+ "pack": {
+  "hash": "sha256:7974dfe9735834a6d6a78263f01346449944a8cb7f8e76d1412a1d099e013509",
+  "id": "core-status",
+  "version": "0.1.0"
+ },
+ "prev_record_hash": "sha256:9376dae3c6b592e2e85e221148eb408ec7e9f1fac781494afe4cd72b569b8820",
+ "record_hash": "sha256:d11f4daf47d7235db7d0121e70c2915ca1dc301dd5088d8da24fdb4f51607195",
+ "record_type": "canary",
+ "record_version": "0.1",
+ "run_id": "2fd46e56-9db9-4eec-aa59-348079eea44a",
+ "runtime": {
+  "adapter_tier": "C",
+  "name": "prism-core",
+  "version": "1.0.0-phase1"
+ },
+ "started_at": "2026-11-15T09:23:37.870068+00:00",
+ "steps": [
+  {
+   "binding": "prism-core-api:/status+/health",
+   "capability_id": "core_status",
+   "cost_microusd": 0,
+   "input_hash": "hmac-sha256:10e350c79b59aaf5edbfbfe7088d672991ed9a44bb7f73c6ac4141ef74b56b3e",
+   "kind": "tool_call",
+   "note": "Step 1: tool call via capability 'core_status' (side effect: none).",
+   "output_hash": "hmac-sha256:f9374a2e8090a1506c605911098683cd6c070ea6460e7344cc697106f51ac1d6",
+   "seq": 1,
+   "side_effect": "none"
+  },
+  {
+   "binding": "prism-core:POST /tasks (memory-lookup)",
+   "capability_id": "",
+   "cost_microusd": 7625,
+   "input_hash": "hmac-sha256:c37404ac88c3eacae632c142a483239d300ae1c858704a4fbf1ee027820c530d",
+   "kind": "model_turn",
+   "note": "Step 2: model turn.",
+   "output_hash": "hmac-sha256:25dfe8b323f9e78a89e9e1a362ba72d09efe52c25f6a59c0372fc580acab3bd3",
+   "seq": 2,
+   "side_effect": "none"
+  },
+  {
+   "binding": "prism-core-api:/status+/health",
+   "capability_id": "core_status",
+   "cost_microusd": 0,
+   "input_hash": "hmac-sha256:10e350c79b59aaf5edbfbfe7088d672991ed9a44bb7f73c6ac4141ef74b56b3e",
+   "kind": "tool_call",
+   "note": "Step 3: tool call via capability 'core_status' (side effect: none).",
+   "output_hash": "hmac-sha256:850343087420df933dbad6ec4d8ddddb2d925cc55876d904ffe0de9e082b6bce",
+   "seq": 3,
+   "side_effect": "none"
+  },
+  {
+   "binding": "prism-core:POST /tasks (memory-lookup)",
+   "capability_id": "",
+   "cost_microusd": 7722,
+   "input_hash": "hmac-sha256:b601247689f14502355f320d17cecd8ff9a91462daaff8e34da0b116f7302482",
+   "kind": "model_turn",
+   "note": "Step 4: model turn.",
+   "output_hash": "hmac-sha256:16953ea863aeac1d8e63a23db341db326ce8c7a531188ce4cfb8a4bc6cd71096",
+   "seq": 4,
+   "side_effect": "none"
+  },
+  {
+   "binding": "prism-core-api:/status+/health",
+   "capability_id": "core_status",
+   "cost_microusd": 0,
+   "input_hash": "hmac-sha256:10e350c79b59aaf5edbfbfe7088d672991ed9a44bb7f73c6ac4141ef74b56b3e",
+   "kind": "tool_call",
+   "note": "Step 5: tool call via capability 'core_status' (side effect: none).",
+   "output_hash": "hmac-sha256:25a228c0ca70297cb5894e7c4d9151f6cee9ccca35cc94676e5b892fdf38cba2",
+   "seq": 5,
+   "side_effect": "none"
+  },
+  {
+   "binding": "prism-core:POST /tasks (memory-lookup)",
+   "capability_id": "",
+   "cost_microusd": 0,
+   "input_hash": "hmac-sha256:006702f18cba98fe7a842529ad787a5273a81d77be0765b1f7f2e93d64ea1000",
+   "kind": "model_turn",
+   "note": "Step 6: model turn.",
+   "output_hash": "hmac-sha256:7d5bbb2874a34ef3f70829b55e29f61c194c7e20837c0c1f7946396fe16feb5f",
+   "seq": 6,
+   "side_effect": "none"
+  }
+ ],
+ "verifier": {
+  "author": "Thomas Lincoln Crockett / TLG3D Labs, LLC",
+  "author_signature": "ed25519:author-tlg3d-labs:U8I16hmhOgeOHFjF6Br6furbc6c1NEBsKHa/75Astt4gOFkQS9L38hJK2QsRssZBRb7wQJWrayKcnEGEnzAiCw==",
+  "canary": {
+   "cell": "real-prism-core",
+   "definition_fingerprint": "sha256:452df6e142ec117afea9347a540bb93030b47cc578ed897e82f6b0aeb8bf397d",
+   "expectation": "path-integrity",
+   "met_expectation": false,
+   "path_checks": {
+    "SP-01": {
+     "create_http": 201,
+     "path_ok": true,
+     "route": "vertex-gemini-2-5-flash",
+     "spend_usd": 0.0076251999999999995,
+     "state": "completed",
+     "task_id": "6ca8aa8a-39e2-445d-ad7c-db54e19d7741",
+     "tier_pinned": 2
+    },
+    "SP-13": {
+     "create_http": 201,
+     "path_ok": true,
+     "route": "vertex-gemini-2-5-flash",
+     "spend_usd": 0.007722199999999999,
+     "state": "completed",
+     "task_id": "99701bcd-e8f9-49aa-9dbb-b42ca0faf59f",
+     "tier_pinned": 2
+    },
+    "SP-19": {
+     "create_http": 201,
+     "path_ok": false,
+     "route": "vertex-gemini-2-5-flash",
+     "spend_usd": 0.0,
+     "state": "failed",
+     "task_id": "1847b0a3-1164-40cf-b33f-0d7f90e7bc3f",
+     "tier_pinned": 2
+    }
+   },
+   "problems": [
+    "SP-19: create_http=201 state=failed tier_pinned=2 route='vertex-gemini-2-5-flash'"
+   ],
+   "spend_cap_breached": false,
+   "spend_cap_usd": 0.25,
+   "spend_usd": 0.015347,
+   "subset_case_ids": [
+    "SP-01",
+    "SP-13",
+    "SP-19"
+   ],
+   "subset_of_n": 24,
+   "suite_freeze_verified": true
+  },
+  "grade": "self-tested",
+  "per_case": [
+   {
+    "id": "SP-01",
+    "pass": true,
+    "why": "ok"
+   },
+   {
+    "id": "SP-13",
+    "pass": true,
+    "why": "ok"
+   },
+   {
+    "id": "SP-19",
+    "pass": false,
+    "why": "case state=failed"
+   }
+  ],
+  "score": {
+   "n": 3,
+   "pass": 2,
+   "pct": 66.7
+  },
+  "scorer_version": "1.0.0",
+  "suite": "S-prompt",
+  "suite_hash": "sha256:159c17c2fb59226676cc9874808e85f003285081dd726d13c30985a820d10ea4",
+  "suite_version": "1.0.0"
+ }
+}

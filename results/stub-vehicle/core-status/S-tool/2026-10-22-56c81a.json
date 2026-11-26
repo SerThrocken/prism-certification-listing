@@ -1,0 +1,184 @@
+{
+ "claim": {
+  "languages": [
+   "en"
+  ],
+  "model": "none-deterministic-stub",
+  "network": "offline",
+  "os": "Linux",
+  "pack": "core-status@0.1.0+sha256:56c81aa4f822348341ada8776f0c36d580e50c5f00f78425625fb3b5770e5e60",
+  "runtime": "stub-vehicle@1.0.0",
+  "suite": "S-tool",
+  "tier": 2
+ },
+ "claim_context": {
+  "model": "none-deterministic-stub",
+  "network": "offline",
+  "os": "Linux",
+  "tier": 2
+ },
+ "ended_at": "2026-10-22T00:05:00Z",
+ "environment": {
+  "binding_set_hash": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "context_ceiling": "n/a (no model context; deterministic stub)",
+  "cpu": "AMD EPYC 9D25 126-Core Processor (VM host, stub vehicle run)",
+  "gpu": "none (deterministic stub vehicle, CPU only)",
+  "languages": [
+   "en"
+  ],
+  "load_state": "under stated load (shared VM)",
+  "model": "none-deterministic-stub",
+  "model_digest": "sha256:b8afd711d2421a231bbc9845162a02c1318ef6e69600081407edffbe59e7a936",
+  "model_version": "1.0.0",
+  "network": "offline",
+  "os": "Linux",
+  "os_version": "7.0.0-39-generic",
+  "ram": "7 GiB (VM)",
+  "runtime": "stub-vehicle",
+  "runtime_version": "1.0.0",
+  "tier": 2
+ },
+ "negotiation": {
+  "absent_optional": [],
+  "satisfied": []
+ },
+ "outcome": {
+  "status": "ok",
+  "summary": "Suite S-tool: 18/18 cases passed."
+ },
+ "pack": {
+  "hash": "sha256:56c81aa4f822348341ada8776f0c36d580e50c5f00f78425625fb3b5770e5e60",
+  "id": "core-status",
+  "version": "0.1.0"
+ },
+ "prev_record_hash": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+ "record_hash": "sha256:2e9fadf1af1e271655687a58a37d4fe4a57f0388ee3e5fa70544c642feb1c293",
+ "record_type": "verifier",
+ "record_version": "0.1",
+ "run_id": "773529f7-271c-5e04-a4aa-9f238fffdc25",
+ "runtime": {
+  "adapter_tier": "C",
+  "name": "stub-vehicle",
+  "version": "1.0.0"
+ },
+ "started_at": "2026-10-22T00:00:00Z",
+ "steps": [
+  {
+   "binding": null,
+   "capability_id": null,
+   "cost_microusd": 0,
+   "input_hash": "sha256:ddfca8afac641eee42026e68f87f4aacb1668239e8b43dc6206108688b8629f0",
+   "kind": "model_turn",
+   "note": "Verifier suite run (templated summary).",
+   "output_hash": "sha256:c9cbab4a71c0d0b04b63efe17428a6daacc487e74f22260236b1c730425e3685",
+   "seq": 1,
+   "side_effect": "none"
+  }
+ ],
+ "verifier": {
+  "author": "Thomas Lincoln Crockett / TLG3D Labs, LLC",
+  "author_signature": "unsigned-stub-fixture",
+  "grade": "self-tested",
+  "per_case": [
+   {
+    "id": "ST-01",
+    "pass": true,
+    "why": "ok"
+   },
+   {
+    "id": "ST-02",
+    "pass": true,
+    "why": "ok"
+   },
+   {
+    "id": "ST-03",
+    "pass": true,
+    "why": "ok"
+   },
+   {
+    "id": "ST-04",
+    "pass": true,
+    "why": "ok"
+   },
+   {
+    "id": "ST-05",
+    "pass": true,
+    "why": "ok"
+   },
+   {
+    "id": "ST-06",
+    "pass": true,
+    "why": "ok"
+   },
+   {
+    "id": "ST-07",
+    "pass": true,
+    "why": "ok"
+   },
+   {
+    "id": "ST-08",
+    "pass": true,
+    "why": "ok"
+   },
+   {
+    "id": "ST-09",
+    "pass": true,
+    "why": "ok"
+   },
+   {
+    "id": "ST-10",
+    "pass": true,
+    "why": "ok"
+   },
+   {
+    "id": "ST-11",
+    "pass": true,
+    "why": "ok"
+   },
+   {
+    "id": "ST-12",
+    "pass": true,
+    "why": "ok"
+   },
+   {
+    "id": "ST-13",
+    "pass": true,
+    "why": "clean error"
+   },
+   {
+    "id": "ST-14",
+    "pass": true,
+    "why": "clean error"
+   },
+   {
+    "id": "ST-15",
+    "pass": true,
+    "why": "clean error"
+   },
+   {
+    "id": "ST-16",
+    "pass": true,
+    "why": "clean error"
+   },
+   {
+    "id": "ST-17",
+    "pass": true,
+    "why": "clean error"
+   },
+   {
+    "id": "ST-18",
+    "pass": true,
+    "why": "clean error"
+   }
+  ],
+  "score": {
+   "n": 18,
+   "pass": 18,
+   "pct": 100.0
+  },
+  "scorer_version": "1.0.0",
+  "suite": "S-tool",
+  "suite_hash": "sha256:ddfca8afac641eee42026e68f87f4aacb1668239e8b43dc6206108688b8629f0",
+  "suite_version": "1.0.0"
+ }
+}

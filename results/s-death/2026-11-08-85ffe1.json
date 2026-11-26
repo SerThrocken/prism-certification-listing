@@ -1,0 +1,208 @@
+{
+ "claim": {
+  "languages": [
+   "en"
+  ],
+  "model": "none",
+  "network": "lan",
+  "os": "Windows",
+  "pack": "prism-core@1.0.0-phase1+sha256:85ffe14351389fa3c76a6de7a0f180e6996cf6cdb03fd72f41183a2dd0cc3489",
+  "runtime": "prism-core@1.0.0-phase1",
+  "suite": "s-death",
+  "tier": 2
+ },
+ "claim_context": {
+  "model": "none",
+  "network": "lan",
+  "os": "Windows",
+  "tier": 2
+ },
+ "drill": {
+  "actor": "thomas",
+  "engaged_at": "2026-11-08T13:03:35.845218+00:00",
+  "engaged_ledger_event": "2026-11-08T13:03:37+00:00",
+  "export_zip_sha256": "sha256:95dbe569ef39e6d8e023f5b328f31c09eccf0261f1eec8bb9c9c0b26b001d36f",
+  "label": "S-death attestation \u2014 Prism Core \u2192 standalone export; drill, self-tested",
+  "recovery_checks": "i, ii, iii, iv, v PASS",
+  "restart_pair": "skipped: no auditor requirement on record",
+  "resumed_at": {
+   "core-services": "2026-11-08T13:17:21+00:00",
+   "jobs-watchers": "2026-11-08T13:22:24+00:00",
+   "outbound-queues": "2026-11-08T13:26:15+00:00"
+  },
+  "tier2_spend_usd": 0.0065404,
+  "tier2_task_id": "f37d8136-e46d-4333-8212-6bf904af602d"
+ },
+ "ended_at": "2026-11-08T13:39:11.155282+00:00",
+ "environment": {
+  "source": {
+   "adapter_tier": "A",
+   "boot_id": "262557a2-3a30-4e54-9ec7-d28ead090c3b",
+   "cpu": "AMD Ryzen 7 7840HS w/ Radeon 780M Graphics",
+   "execution_host": "Acer reference bench (spec 12 s4.7)",
+   "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU, 8188 MiB",
+   "load_state": "Core idle, zero live tasks at engage; GPU 0%; Home API 22/22 services ok at run time",
+   "model": "vertex-gemini-2-5-flash",
+   "model_role": "check (iv) Tier-2 route only; halt, resume and parse used no model",
+   "network": "lan",
+   "os": "Windows",
+   "os_version": "Microsoft Windows 11 Home build 26300",
+   "ram": "64 GiB DDR5",
+   "runtime": "prism-core",
+   "runtime_version": "1.0.0-phase1",
+   "tier": 2
+  },
+  "target": {
+   "execution_host": "this VM (Linux, Python 3.12 stdlib parser)",
+   "load_state": "parse of the off-Acer export copy; exit 0, 10/10 checks",
+   "model": "none",
+   "model_note": "the parse is deterministic; no model in the parse path",
+   "network": "offline",
+   "os": "Linux",
+   "runtime": "standalone_parse.py"
+  }
+ },
+ "form": "shared",
+ "negotiation": {
+  "absent_optional": [],
+  "satisfied": []
+ },
+ "outcome": {
+  "status": "ok",
+  "summary": "Run finished with status 'ok' across 10 step(s)."
+ },
+ "pack": {
+  "hash": "sha256:85ffe14351389fa3c76a6de7a0f180e6996cf6cdb03fd72f41183a2dd0cc3489",
+  "id": "prism-core",
+  "version": "1.0.0-phase1"
+ },
+ "prev_record_hash": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+ "record_hash": "sha256:6331ba57fccba5d48a5cf8cc8d72865a9369edd3e84b5de340eac3c7e43e2497",
+ "record_type": "s-death",
+ "record_version": "0.1",
+ "run_id": "aacc82e1-7dff-4b6f-8e17-e2f628d28804",
+ "runtime": {
+  "adapter_tier": "A",
+  "name": "prism-core",
+  "version": "1.0.0-phase1"
+ },
+ "started_at": "2026-11-08T13:03:35.845218+00:00",
+ "steps": [
+  {
+   "binding": "",
+   "capability_id": "panic-engage",
+   "cost_microusd": 0,
+   "input_hash": null,
+   "kind": "human_step",
+   "note": "Step 1: human step via capability 'panic-engage' (side effect: none).",
+   "output_hash": null,
+   "seq": 1,
+   "side_effect": "none"
+  },
+  {
+   "binding": "",
+   "capability_id": "standalone-parse",
+   "cost_microusd": 0,
+   "input_hash": null,
+   "kind": "tool_call",
+   "note": "Step 2: tool call via capability 'standalone-parse' (side effect: none).",
+   "output_hash": null,
+   "seq": 2,
+   "side_effect": "none"
+  },
+  {
+   "binding": "",
+   "capability_id": "panic-resume",
+   "cost_microusd": 0,
+   "input_hash": null,
+   "kind": "human_step",
+   "note": "Step 3: human step via capability 'panic-resume' (side effect: none).",
+   "output_hash": null,
+   "seq": 3,
+   "side_effect": "none"
+  },
+  {
+   "binding": "",
+   "capability_id": "panic-resume",
+   "cost_microusd": 0,
+   "input_hash": null,
+   "kind": "human_step",
+   "note": "Step 4: human step via capability 'panic-resume' (side effect: none).",
+   "output_hash": null,
+   "seq": 4,
+   "side_effect": "none"
+  },
+  {
+   "binding": "",
+   "capability_id": "panic-resume",
+   "cost_microusd": 0,
+   "input_hash": null,
+   "kind": "human_step",
+   "note": "Step 5: human step via capability 'panic-resume' (side effect: none).",
+   "output_hash": null,
+   "seq": 5,
+   "side_effect": "none"
+  },
+  {
+   "binding": "",
+   "capability_id": "recovery-check",
+   "cost_microusd": 0,
+   "input_hash": null,
+   "kind": "tool_call",
+   "note": "Step 6: tool call via capability 'recovery-check' (side effect: none).",
+   "output_hash": null,
+   "seq": 6,
+   "side_effect": "none"
+  },
+  {
+   "binding": "",
+   "capability_id": "recovery-check",
+   "cost_microusd": 0,
+   "input_hash": null,
+   "kind": "tool_call",
+   "note": "Step 7: tool call via capability 'recovery-check' (side effect: none).",
+   "output_hash": null,
+   "seq": 7,
+   "side_effect": "none"
+  },
+  {
+   "binding": "",
+   "capability_id": "recovery-check",
+   "cost_microusd": 0,
+   "input_hash": null,
+   "kind": "tool_call",
+   "note": "Step 8: tool call via capability 'recovery-check' (side effect: none).",
+   "output_hash": null,
+   "seq": 8,
+   "side_effect": "none"
+  },
+  {
+   "binding": "",
+   "capability_id": "recovery-check",
+   "cost_microusd": 0,
+   "input_hash": null,
+   "kind": "tool_call",
+   "note": "Step 9: tool call via capability 'recovery-check' (side effect: none).",
+   "output_hash": null,
+   "seq": 9,
+   "side_effect": "none"
+  },
+  {
+   "binding": "",
+   "capability_id": "chat",
+   "cost_microusd": 6540,
+   "input_hash": null,
+   "kind": "model_turn",
+   "note": "Step 10: model turn.",
+   "output_hash": null,
+   "seq": 10,
+   "side_effect": "none"
+  }
+ ],
+ "verifier": {
+  "author": "Thomas Lincoln Crockett / TLG3D Labs, LLC",
+  "grade": "self-tested",
+  "label": "S-death attestation \u2014 Prism Core \u2192 standalone export; drill, self-tested",
+  "note": "S-death is not a section 4.1 claim. Verified grade requires the 2-of-3 bench signing whose holders are nominated, not enrolled; no author signature is present because no signing key exists."
+ }
+}

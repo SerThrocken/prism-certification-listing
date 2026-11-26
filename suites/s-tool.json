@@ -1,0 +1,323 @@
+{
+ "_meta": {
+  "regeneration": "v1.1.0 regenerated 2026-10-22 (W1) to conform to the pack code contract under the governing ruling (contract lives in pack code, spec 12 s1.3 code-wins). v1.0.0 expected a per-component shape {component, status, uptime_s, side_effect} that no honest binding can supply: the Prism Core API exposes whole-Core status only (W1-U3 probe). Record: certification/w1/SUITE-REGENERATION-RECORD.md. Pre-change results are historical (s4.6).",
+  "scoring": "Deterministic rubric in kit/scorer/score.py; no model judgement.",
+  "vehicle": "core_status tool (capability_id: core_status, side_effect_class: none), whole-service contract per packs/core-status/src/core_status.py CONTRACTS"
+ },
+ "bar": "100% contract-valid on valid input; 100% clean errors on bad or unsupported input; zero undeclared side effects",
+ "claim_note": "Practice suite. Claims using this suite name languages: [en] only.",
+ "items": [
+  {
+   "category": "schema",
+   "expect": {
+    "field_types": {
+     "service": "string",
+     "side_effect": "string",
+     "state": "string"
+    },
+    "outcome": "ok",
+    "required_fields": [
+     "service",
+     "state",
+     "side_effect"
+    ]
+   },
+   "id": "ST-01",
+   "kind": "schema",
+   "tool": "core_status",
+   "tool_input": {}
+  },
+  {
+   "category": "schema",
+   "expect": {
+    "field_types": {
+     "service": "string",
+     "side_effect": "string",
+     "state": "string"
+    },
+    "outcome": "ok",
+    "required_fields": [
+     "service",
+     "state",
+     "side_effect"
+    ]
+   },
+   "id": "ST-02",
+   "kind": "schema",
+   "tool": "core_status",
+   "tool_input": {}
+  },
+  {
+   "category": "schema",
+   "expect": {
+    "field_types": {
+     "service": "string",
+     "side_effect": "string",
+     "state": "string"
+    },
+    "outcome": "ok",
+    "required_fields": [
+     "service",
+     "state",
+     "side_effect"
+    ]
+   },
+   "id": "ST-03",
+   "kind": "schema",
+   "tool": "core_status",
+   "tool_input": {}
+  },
+  {
+   "category": "schema",
+   "expect": {
+    "field_types": {
+     "service": "string",
+     "side_effect": "string",
+     "state": "string"
+    },
+    "outcome": "ok",
+    "required_fields": [
+     "service",
+     "state",
+     "side_effect"
+    ]
+   },
+   "id": "ST-04",
+   "kind": "schema",
+   "tool": "core_status",
+   "tool_input": {}
+  },
+  {
+   "category": "schema",
+   "expect": {
+    "field_types": {
+     "service": "string",
+     "side_effect": "string",
+     "state": "string"
+    },
+    "outcome": "ok",
+    "required_fields": [
+     "service",
+     "state",
+     "side_effect"
+    ]
+   },
+   "id": "ST-05",
+   "kind": "schema",
+   "tool": "core_status",
+   "tool_input": {}
+  },
+  {
+   "category": "schema",
+   "expect": {
+    "field_types": {
+     "service": "string",
+     "side_effect": "string",
+     "state": "string"
+    },
+    "outcome": "ok",
+    "required_fields": [
+     "service",
+     "state",
+     "side_effect"
+    ]
+   },
+   "id": "ST-06",
+   "kind": "schema",
+   "tool": "core_status",
+   "tool_input": {}
+  },
+  {
+   "category": "side-effect",
+   "expect": {
+    "error_required": true,
+    "outcome": "error"
+   },
+   "id": "ST-07",
+   "kind": "side-effect",
+   "must_not_include": [
+    "restarted",
+    "purged",
+    "shut down",
+    "rebooted"
+   ],
+   "tool": "core_status",
+   "tool_input": {
+    "action": "restart"
+   }
+  },
+  {
+   "category": "side-effect",
+   "expect": {
+    "error_required": true,
+    "outcome": "error"
+   },
+   "id": "ST-08",
+   "kind": "side-effect",
+   "must_not_include": [
+    "restarted",
+    "purged",
+    "shut down",
+    "rebooted"
+   ],
+   "tool": "core_status",
+   "tool_input": {
+    "action": "purge_cache"
+   }
+  },
+  {
+   "category": "side-effect",
+   "expect": {
+    "error_required": true,
+    "outcome": "error"
+   },
+   "id": "ST-09",
+   "kind": "side-effect",
+   "must_not_include": [
+    "restarted",
+    "purged",
+    "shut down",
+    "rebooted"
+   ],
+   "tool": "core_status",
+   "tool_input": {
+    "write_log": true
+   }
+  },
+  {
+   "category": "side-effect",
+   "expect": {
+    "error_required": true,
+    "outcome": "error"
+   },
+   "id": "ST-10",
+   "kind": "side-effect",
+   "must_not_include": [
+    "restarted",
+    "purged",
+    "shut down",
+    "rebooted"
+   ],
+   "tool": "core_status",
+   "tool_input": {
+    "action": "shutdown"
+   }
+  },
+  {
+   "category": "side-effect",
+   "expect": {
+    "error_required": true,
+    "outcome": "error"
+   },
+   "id": "ST-11",
+   "kind": "side-effect",
+   "must_not_include": [
+    "restarted",
+    "purged",
+    "shut down",
+    "rebooted"
+   ],
+   "tool": "core_status",
+   "tool_input": {
+    "component": "gateway"
+   }
+  },
+  {
+   "category": "side-effect",
+   "expect": {
+    "error_required": true,
+    "outcome": "error"
+   },
+   "id": "ST-12",
+   "kind": "side-effect",
+   "must_not_include": [
+    "restarted",
+    "purged",
+    "shut down",
+    "rebooted"
+   ],
+   "tool": "core_status",
+   "tool_input": {
+    "reboot": true
+   }
+  },
+  {
+   "category": "bad-input",
+   "expect": {
+    "error_required": true,
+    "outcome": "error"
+   },
+   "id": "ST-13",
+   "kind": "bad-input",
+   "tool": "core_status",
+   "tool_input": "gateway"
+  },
+  {
+   "category": "bad-input",
+   "expect": {
+    "error_required": true,
+    "outcome": "error"
+   },
+   "id": "ST-14",
+   "kind": "bad-input",
+   "tool": "core_status",
+   "tool_input": 42
+  },
+  {
+   "category": "bad-input",
+   "expect": {
+    "error_required": true,
+    "outcome": "error"
+   },
+   "id": "ST-15",
+   "kind": "bad-input",
+   "tool": "core_status",
+   "tool_input": [
+    "gateway"
+   ]
+  },
+  {
+   "category": "bad-input",
+   "expect": {
+    "error_required": true,
+    "outcome": "error"
+   },
+   "id": "ST-16",
+   "kind": "bad-input",
+   "tool": "core_status",
+   "tool_input": true
+  },
+  {
+   "category": "bad-input",
+   "expect": {
+    "error_required": true,
+    "outcome": "error"
+   },
+   "id": "ST-17",
+   "kind": "bad-input",
+   "tool": "core_status",
+   "tool_input": {
+    "component": 42
+   }
+  },
+  {
+   "category": "bad-input",
+   "expect": {
+    "error_required": true,
+    "outcome": "error"
+   },
+   "id": "ST-18",
+   "kind": "bad-input",
+   "tool": "core_status",
+   "tool_input": {
+    "verbose": "yes"
+   }
+  }
+ ],
+ "kind": "tool",
+ "languages": [
+  "en"
+ ],
+ "suite": "S-tool",
+ "suite_version": "1.1.0"
+}

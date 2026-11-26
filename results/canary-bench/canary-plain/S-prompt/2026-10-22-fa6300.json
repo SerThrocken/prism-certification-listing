@@ -1,0 +1,481 @@
+{
+ "claim": {
+  "languages": [
+   "en"
+  ],
+  "model": "none-deterministic-canary",
+  "network": "offline",
+  "os": "Windows",
+  "pack": "canary-plain@0.1.0+sha256:fa6300a5b494604d2277bf4dbc9fa6f89cca6683afdea22ff31d31467473989f",
+  "runtime": "canary-bench@1.0.0",
+  "suite": "S-prompt",
+  "tier": 2
+ },
+ "claim_context": {
+  "model": "none-deterministic-canary",
+  "network": "offline",
+  "os": "Windows",
+  "tier": 2
+ },
+ "ended_at": "2026-10-22T23:13:30.732478+00:00",
+ "environment": {
+  "binding_set_hash": "sha256:d142a677dcfa7a8fca353d951a3cb26dbb9cb112d467f610181e1350f059bd74",
+  "containers_running": 37,
+  "context_ceiling": "n/a (no model context; deterministic canary)",
+  "cpu": "AMD Ryzen 7 7840HS w/ Radeon 780M Graphics",
+  "execution_host": "Acer reference bench (spec 12 s4.7)",
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU, 8188 MiB, 95 %, 6548 MiB",
+  "languages": [
+   "en"
+  ],
+  "load_state": "loaded: 37 containers running; Ollama resident: qwen3:8b, nomic-embed-text:latest; GPU memory used 6548 MiB; Home API 20/21 services ok at run time",
+  "model": "none-deterministic-canary",
+  "model_digest": "sha256:45e6a7aab2e5947a23aaa186d16b1e010e3089fbf6f2335e42d8b1698b5c7981",
+  "model_version": "1.0.0",
+  "network": "offline",
+  "os": "Windows",
+  "os_version": "Microsoft Windows 11 Home build 26300",
+  "ram": "63.3 GiB",
+  "ram_load_pct": 52,
+  "resident_models": [
+   "qwen3:8b",
+   "nomic-embed-text:latest"
+  ],
+  "runtime": "canary-bench",
+  "runtime_version": "1.0.0",
+  "suite_freeze_verified": true,
+  "tier": 2
+ },
+ "form": "shared",
+ "negotiation": {
+  "absent_optional": [],
+  "satisfied": []
+ },
+ "outcome": {
+  "status": "ok",
+  "summary": "Run finished with status 'ok' across 24 step(s)."
+ },
+ "pack": {
+  "hash": "sha256:fa6300a5b494604d2277bf4dbc9fa6f89cca6683afdea22ff31d31467473989f",
+  "id": "canary-plain",
+  "version": "0.1.0"
+ },
+ "prev_record_hash": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+ "record_hash": "sha256:25e87f4fa33d2a35d0ecba236deca267df972a5dd3e86c3446f98dfc80c559eb",
+ "record_type": "canary",
+ "record_version": "0.1",
+ "run_id": "3ae839a4-6fed-4fcf-bf3c-6150cb49a358",
+ "runtime": {
+  "adapter_tier": "C",
+  "name": "canary-bench",
+  "version": "1.0.0"
+ },
+ "started_at": "2026-10-22T23:13:30.658688+00:00",
+ "steps": [
+  {
+   "binding": "",
+   "capability_id": "",
+   "cost_microusd": 0,
+   "input_hash": "hmac-sha256:c37404ac88c3eacae632c142a483239d300ae1c858704a4fbf1ee027820c530d",
+   "kind": "model_turn",
+   "note": "Step 1: model turn.",
+   "output_hash": "hmac-sha256:25dfe8b323f9e78a89e9e1a362ba72d09efe52c25f6a59c0372fc580acab3bd3",
+   "seq": 1,
+   "side_effect": "none"
+  },
+  {
+   "binding": "",
+   "capability_id": "",
+   "cost_microusd": 0,
+   "input_hash": "hmac-sha256:6efa65233a62827eb4a909cab6d12ea1d2c166c9cffccd351e4a989f24495fbd",
+   "kind": "model_turn",
+   "note": "Step 2: model turn.",
+   "output_hash": "hmac-sha256:cc8980fd8456cb75226ce544a5ffd1a2316742557155c062617c91d8824bed9d",
+   "seq": 2,
+   "side_effect": "none"
+  },
+  {
+   "binding": "",
+   "capability_id": "",
+   "cost_microusd": 0,
+   "input_hash": "hmac-sha256:602998197b6c57361a09e1a96c1fdf081c1a75bcf5dae7f07dbccdff1e0d213d",
+   "kind": "model_turn",
+   "note": "Step 3: model turn.",
+   "output_hash": "hmac-sha256:081c757b3a5482196e2aa3b5dfd7469725dce1d75a6cfa4063c039ae05e6d947",
+   "seq": 3,
+   "side_effect": "none"
+  },
+  {
+   "binding": "",
+   "capability_id": "",
+   "cost_microusd": 0,
+   "input_hash": "hmac-sha256:760a9c70b571a26cbc005626583e2749be506c82d87fc86068bd5d05296b6739",
+   "kind": "model_turn",
+   "note": "Step 4: model turn.",
+   "output_hash": "hmac-sha256:f032e3045920b937da86147d35eb4fab4ca0a3834cd80179efb15d092491abe6",
+   "seq": 4,
+   "side_effect": "none"
+  },
+  {
+   "binding": "",
+   "capability_id": "",
+   "cost_microusd": 0,
+   "input_hash": "hmac-sha256:022ab37c7d1a22fdd5521739820098c2fb06b2bfbff642f5f88c3523515f8d60",
+   "kind": "model_turn",
+   "note": "Step 5: model turn.",
+   "output_hash": "hmac-sha256:b3dbfe8eaf05da013a9b2e97d1712a3f2493e084dbb49858c4feb79b3db1e8ed",
+   "seq": 5,
+   "side_effect": "none"
+  },
+  {
+   "binding": "",
+   "capability_id": "",
+   "cost_microusd": 0,
+   "input_hash": "hmac-sha256:4dace944c2b9dbacfecce103e9e9df7a3f3e5facbad39cf53121b974bd104dbe",
+   "kind": "model_turn",
+   "note": "Step 6: model turn.",
+   "output_hash": "hmac-sha256:401606b354000c2dec5fede1e7ec0b47a84e2c3e3b46e8a30f5bbbde8d8d8dd5",
+   "seq": 6,
+   "side_effect": "none"
+  },
+  {
+   "binding": "",
+   "capability_id": "",
+   "cost_microusd": 0,
+   "input_hash": "hmac-sha256:7f25bbe797af6b4868ec18ef77c6e25634a4cac6008e4e612556d7b20d2fd037",
+   "kind": "model_turn",
+   "note": "Step 7: model turn.",
+   "output_hash": "hmac-sha256:4c1a330cfaff2e2a786c4f61cb65b404689a775608fa0acff4225184f717f7b4",
+   "seq": 7,
+   "side_effect": "none"
+  },
+  {
+   "binding": "",
+   "capability_id": "",
+   "cost_microusd": 0,
+   "input_hash": "hmac-sha256:03465d02f7a37de6705c774b334835599491869a5f76e151d9e633d2e5505614",
+   "kind": "model_turn",
+   "note": "Step 8: model turn.",
+   "output_hash": "hmac-sha256:2ceed676b2df659c84ee0222732b742553a5ac24868ad24d6af5c163ee00b1e2",
+   "seq": 8,
+   "side_effect": "none"
+  },
+  {
+   "binding": "",
+   "capability_id": "",
+   "cost_microusd": 0,
+   "input_hash": "hmac-sha256:781d88bb0c548af832bbd41dd4039b763e8f25aee54726ebdf0d87a2a32711fa",
+   "kind": "model_turn",
+   "note": "Step 9: model turn.",
+   "output_hash": "hmac-sha256:80956b895d43a9d859b83ae44b1b9edb7dce0a3aa6a3ae6980d3635bc808739a",
+   "seq": 9,
+   "side_effect": "none"
+  },
+  {
+   "binding": "",
+   "capability_id": "",
+   "cost_microusd": 0,
+   "input_hash": "hmac-sha256:776f2bbb8660804c0ef7e85b0b30e9a91126db6925e2460e13280e50edb6b7ff",
+   "kind": "model_turn",
+   "note": "Step 10: model turn.",
+   "output_hash": "hmac-sha256:c3e55d8e44432b3d6b622b340913f380578b6ec4541d35f0cebdae95511e06be",
+   "seq": 10,
+   "side_effect": "none"
+  },
+  {
+   "binding": "",
+   "capability_id": "",
+   "cost_microusd": 0,
+   "input_hash": "hmac-sha256:9249ed5e04ac94c58a99298517b09e347a30b9b24502eef3ed4d111b23d0abf2",
+   "kind": "model_turn",
+   "note": "Step 11: model turn.",
+   "output_hash": "hmac-sha256:d4277d8ae6c72eb976a712b7a2db46a8a9843a8fe17aac96a36d9d2faa2047cb",
+   "seq": 11,
+   "side_effect": "none"
+  },
+  {
+   "binding": "",
+   "capability_id": "",
+   "cost_microusd": 0,
+   "input_hash": "hmac-sha256:19aae0359092ce5cb676b419ca246798955b16d80f7797b3902ad6dea73911cd",
+   "kind": "model_turn",
+   "note": "Step 12: model turn.",
+   "output_hash": "hmac-sha256:678b055c2bf3a38fabd729bb33e5e56c964001acdf9520aa357211ac71bafb3d",
+   "seq": 12,
+   "side_effect": "none"
+  },
+  {
+   "binding": "",
+   "capability_id": "",
+   "cost_microusd": 0,
+   "input_hash": "hmac-sha256:b601247689f14502355f320d17cecd8ff9a91462daaff8e34da0b116f7302482",
+   "kind": "model_turn",
+   "note": "Step 13: model turn.",
+   "output_hash": "hmac-sha256:541bb5585251bcc47b96fd03b0416e2a337ccc510d1e759b8e522fc6ad9dfae7",
+   "seq": 13,
+   "side_effect": "none"
+  },
+  {
+   "binding": "",
+   "capability_id": "",
+   "cost_microusd": 0,
+   "input_hash": "hmac-sha256:1123eb1c9d504b89b8c86517b8ab1b64773086cead3a0fe88ea9432ec742e78a",
+   "kind": "model_turn",
+   "note": "Step 14: model turn.",
+   "output_hash": "hmac-sha256:541bb5585251bcc47b96fd03b0416e2a337ccc510d1e759b8e522fc6ad9dfae7",
+   "seq": 14,
+   "side_effect": "none"
+  },
+  {
+   "binding": "",
+   "capability_id": "",
+   "cost_microusd": 0,
+   "input_hash": "hmac-sha256:acecef528d37ee2d2f13b0ec7a2e95569b5546893e73218835d40a0912cae7c2",
+   "kind": "model_turn",
+   "note": "Step 15: model turn.",
+   "output_hash": "hmac-sha256:541bb5585251bcc47b96fd03b0416e2a337ccc510d1e759b8e522fc6ad9dfae7",
+   "seq": 15,
+   "side_effect": "none"
+  },
+  {
+   "binding": "",
+   "capability_id": "",
+   "cost_microusd": 0,
+   "input_hash": "hmac-sha256:4ed86b63d3de480b500fe14a9e9fffe6bc009b829d2a72f4bb5ca26bec60dbc4",
+   "kind": "model_turn",
+   "note": "Step 16: model turn.",
+   "output_hash": "hmac-sha256:541bb5585251bcc47b96fd03b0416e2a337ccc510d1e759b8e522fc6ad9dfae7",
+   "seq": 16,
+   "side_effect": "none"
+  },
+  {
+   "binding": "",
+   "capability_id": "",
+   "cost_microusd": 0,
+   "input_hash": "hmac-sha256:46fda3422c7b59e539ed2f50a17e25a4ba3d15e57b60970ea8d68c2ddeaab909",
+   "kind": "model_turn",
+   "note": "Step 17: model turn.",
+   "output_hash": "hmac-sha256:541bb5585251bcc47b96fd03b0416e2a337ccc510d1e759b8e522fc6ad9dfae7",
+   "seq": 17,
+   "side_effect": "none"
+  },
+  {
+   "binding": "",
+   "capability_id": "",
+   "cost_microusd": 0,
+   "input_hash": "hmac-sha256:809e080c31fcc7d377b57d106ce6ac3df64d77776f7ee8167d98d94e51cdecdc",
+   "kind": "model_turn",
+   "note": "Step 18: model turn.",
+   "output_hash": "hmac-sha256:541bb5585251bcc47b96fd03b0416e2a337ccc510d1e759b8e522fc6ad9dfae7",
+   "seq": 18,
+   "side_effect": "none"
+  },
+  {
+   "binding": "",
+   "capability_id": "",
+   "cost_microusd": 0,
+   "input_hash": "hmac-sha256:006702f18cba98fe7a842529ad787a5273a81d77be0765b1f7f2e93d64ea1000",
+   "kind": "model_turn",
+   "note": "Step 19: model turn.",
+   "output_hash": "hmac-sha256:190352c0885c80daaadf31448aac160e34b53038dadd55f854359b276577f477",
+   "seq": 19,
+   "side_effect": "none"
+  },
+  {
+   "binding": "",
+   "capability_id": "",
+   "cost_microusd": 0,
+   "input_hash": "hmac-sha256:f33fe7aa9bddb3c871e72d6fc675b81130c8aad1c6b07cb2f256d7ba20acc24e",
+   "kind": "model_turn",
+   "note": "Step 20: model turn.",
+   "output_hash": "hmac-sha256:c6aa05b8404b5c8bd5f57ae46c787c5a3b0cb7dbe4be5e57b3bb58aaad164df7",
+   "seq": 20,
+   "side_effect": "none"
+  },
+  {
+   "binding": "",
+   "capability_id": "",
+   "cost_microusd": 0,
+   "input_hash": "hmac-sha256:6902c3441b21ffeef60e5bad3c1720316d937d9e88938ed0f2e6e38c8e70c58a",
+   "kind": "model_turn",
+   "note": "Step 21: model turn.",
+   "output_hash": "hmac-sha256:82e02e25eb717acc06d51d6e8677a87fee0fa4123363c46d298ae7e6aa800185",
+   "seq": 21,
+   "side_effect": "none"
+  },
+  {
+   "binding": "",
+   "capability_id": "",
+   "cost_microusd": 0,
+   "input_hash": "hmac-sha256:1b960d754b8ef4d2fafdbad35f23b027381145e910c6676d9bd585a92afcad54",
+   "kind": "model_turn",
+   "note": "Step 22: model turn.",
+   "output_hash": "hmac-sha256:3fe50ea66a1488f57e0553bf141166aacb7c8c895a430dbc0840de2e0a8a799e",
+   "seq": 22,
+   "side_effect": "none"
+  },
+  {
+   "binding": "",
+   "capability_id": "",
+   "cost_microusd": 0,
+   "input_hash": "hmac-sha256:de001fbc98f40984930c2347f44c989c200437f4dbc30dabcbac17a42ab2ff9d",
+   "kind": "model_turn",
+   "note": "Step 23: model turn.",
+   "output_hash": "hmac-sha256:d46d12d87145a3603fd9b25533ea9b05fe64f03c909493db5dbbde3c295cb0f8",
+   "seq": 23,
+   "side_effect": "none"
+  },
+  {
+   "binding": "",
+   "capability_id": "",
+   "cost_microusd": 0,
+   "input_hash": "hmac-sha256:8a1b5d81e8718d0efca4357fed2fbdf17f481a70b35a0affe6cbac19a011c60d",
+   "kind": "model_turn",
+   "note": "Step 24: model turn.",
+   "output_hash": "hmac-sha256:8e437ef4c4dc5596db807708bca530a4a1ace7c180398e9583812d75575d20ad",
+   "seq": 24,
+   "side_effect": "none"
+  }
+ ],
+ "verifier": {
+  "author": "Thomas Lincoln Crockett / TLG3D Labs, LLC",
+  "author_signature": "ed25519:author-tlg3d-labs:I509LPdK1N+5GxecQvbovVy0hoSc/xswHTK5XfxtjgODj1nIZzpp26K4NdPJZk02QpS2VS/QLZ7E3lI0ESaQCQ==",
+  "canary": {
+   "expected_pass": 24,
+   "met_expectation": true,
+   "suite_freeze_verified": true
+  },
+  "grade": "self-tested",
+  "per_case": [
+   {
+    "id": "SP-01",
+    "pass": true,
+    "why": "ok"
+   },
+   {
+    "id": "SP-02",
+    "pass": true,
+    "why": "ok"
+   },
+   {
+    "id": "SP-03",
+    "pass": true,
+    "why": "ok"
+   },
+   {
+    "id": "SP-04",
+    "pass": true,
+    "why": "ok"
+   },
+   {
+    "id": "SP-05",
+    "pass": true,
+    "why": "ok"
+   },
+   {
+    "id": "SP-06",
+    "pass": true,
+    "why": "ok"
+   },
+   {
+    "id": "SP-07",
+    "pass": true,
+    "why": "ok"
+   },
+   {
+    "id": "SP-08",
+    "pass": true,
+    "why": "ok"
+   },
+   {
+    "id": "SP-09",
+    "pass": true,
+    "why": "ok"
+   },
+   {
+    "id": "SP-10",
+    "pass": true,
+    "why": "ok"
+   },
+   {
+    "id": "SP-11",
+    "pass": true,
+    "why": "ok"
+   },
+   {
+    "id": "SP-12",
+    "pass": true,
+    "why": "ok"
+   },
+   {
+    "id": "SP-13",
+    "pass": true,
+    "why": "ok"
+   },
+   {
+    "id": "SP-14",
+    "pass": true,
+    "why": "ok"
+   },
+   {
+    "id": "SP-15",
+    "pass": true,
+    "why": "ok"
+   },
+   {
+    "id": "SP-16",
+    "pass": true,
+    "why": "ok"
+   },
+   {
+    "id": "SP-17",
+    "pass": true,
+    "why": "ok"
+   },
+   {
+    "id": "SP-18",
+    "pass": true,
+    "why": "ok"
+   },
+   {
+    "id": "SP-19",
+    "pass": true,
+    "why": "ok"
+   },
+   {
+    "id": "SP-20",
+    "pass": true,
+    "why": "ok"
+   },
+   {
+    "id": "SP-21",
+    "pass": true,
+    "why": "ok"
+   },
+   {
+    "id": "SP-22",
+    "pass": true,
+    "why": "ok"
+   },
+   {
+    "id": "SP-23",
+    "pass": true,
+    "why": "ok"
+   },
+   {
+    "id": "SP-24",
+    "pass": true,
+    "why": "ok"
+   }
+  ],
+  "score": {
+   "n": 24,
+   "pass": 24,
+   "pct": 100.0
+  },
+  "scorer_version": "1.0.0",
+  "suite": "S-prompt",
+  "suite_hash": "sha256:159c17c2fb59226676cc9874808e85f003285081dd726d13c30985a820d10ea4",
+  "suite_version": "1.0.0"
+ }
+}

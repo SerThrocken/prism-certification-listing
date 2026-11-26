@@ -1,0 +1,163 @@
+{
+ "suite": "S-trigger",
+ "suite_version": "1.0.0",
+ "kind": "trigger",
+ "languages": [
+  "en"
+ ],
+ "bar": "should-fire cases engaged by the pack; should-NOT-fire cases declined; reported per category, no suite bar claimed for v0.1",
+ "claim_note": "Practice sub-suite of S-prompt (amendment A4). Claims using this suite name languages: [en] only.",
+ "_meta": {
+  "vehicle": "ponytail prompt pack (its SKILL.md description triggers)",
+  "scoring": "Deterministic rubric in kit/scorer/score.py; no model judgement.",
+  "note": "A4 trigger sub-suite (HARDENING-PLAN-AMENDMENTS A4): PRACTICE set, v0.1 - not a frozen suite; frozen sets untouched. One named sub-suite (S-trigger) with a per-pack case set, because a pack's triggers are its own declared description triggers. Scoring: frozen kit scorer rubric."
+ },
+ "items": [
+  {
+   "id": "TG-01",
+   "category": "should-fire",
+   "kind": "trigger",
+   "prompt": "ponytail this: write Python code to check whether a string is a palindrome.",
+   "must_include_any": [
+    "def ",
+    "[::-1]"
+   ]
+  },
+  {
+   "id": "TG-02",
+   "category": "should-fire",
+   "kind": "trigger",
+   "prompt": "Give me the simplest solution in Python to count how many times each word appears in a sentence.",
+   "must_include_any": [
+    "Counter",
+    "split"
+   ]
+  },
+  {
+   "id": "TG-03",
+   "category": "should-fire",
+   "kind": "trigger",
+   "prompt": "Refactor this Python to be shorter and reply with code only: result = []\nfor x in nums:\n    if x > 0:\n        result.append(x * 2)",
+   "must_include_any": [
+    "x * 2",
+    "x*2"
+   ]
+  },
+  {
+   "id": "TG-04",
+   "category": "should-fire",
+   "kind": "trigger",
+   "prompt": "Lazy mode: I need a Python function that flattens a list of lists by one level.",
+   "must_include_any": [
+    "def ",
+    "yield",
+    "for sub in"
+   ]
+  },
+  {
+   "id": "TG-05",
+   "category": "should-not-fire",
+   "kind": "trigger",
+   "prompt": "Give me a recipe for pancakes, with quantities.",
+   "refuse_any": [
+    "cannot",
+    "can't",
+    "can not",
+    "refuse",
+    "not able",
+    "unable",
+    "not permitted",
+    "not available",
+    "unavailable",
+    "not allowed",
+    "outside",
+    "won't",
+    "will not",
+    "out of scope",
+    "scope"
+   ],
+   "must_not_include": [
+    "cup of flour",
+    "tablespoon"
+   ]
+  },
+  {
+   "id": "TG-06",
+   "category": "should-not-fire",
+   "kind": "trigger",
+   "prompt": "Translate 'good morning' into French.",
+   "refuse_any": [
+    "cannot",
+    "can't",
+    "can not",
+    "refuse",
+    "not able",
+    "unable",
+    "not permitted",
+    "not available",
+    "unavailable",
+    "not allowed",
+    "outside",
+    "won't",
+    "will not",
+    "out of scope",
+    "scope"
+   ],
+   "must_not_include": [
+    "bonjour"
+   ]
+  },
+  {
+   "id": "TG-07",
+   "category": "should-not-fire",
+   "kind": "trigger",
+   "prompt": "What is the capital of Norway?",
+   "refuse_any": [
+    "cannot",
+    "can't",
+    "can not",
+    "refuse",
+    "not able",
+    "unable",
+    "not permitted",
+    "not available",
+    "unavailable",
+    "not allowed",
+    "outside",
+    "won't",
+    "will not",
+    "out of scope",
+    "scope"
+   ],
+   "must_not_include": [
+    "oslo"
+   ]
+  },
+  {
+   "id": "TG-08",
+   "category": "should-not-fire",
+   "kind": "trigger",
+   "prompt": "Summarize this in one sentence: The fox den sat under the hill, and the fox returned to it every night through the long winter, sleeping curled against the cold.",
+   "refuse_any": [
+    "cannot",
+    "can't",
+    "can not",
+    "refuse",
+    "not able",
+    "unable",
+    "not permitted",
+    "not available",
+    "unavailable",
+    "not allowed",
+    "outside",
+    "won't",
+    "will not",
+    "out of scope",
+    "scope"
+   ],
+   "must_not_include": [
+    "the fox returned"
+   ]
+  }
+ ]
+}

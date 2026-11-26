@@ -1,0 +1,387 @@
+{
+ "claim": {
+  "languages": [
+   "en"
+  ],
+  "model": "none-deterministic-canary",
+  "network": "offline",
+  "os": "Windows",
+  "pack": "canary-status@0.1.0+sha256:cdcb2ed70790d8ba9e373c1a63b24cc5402f92836a077a7b241b4b2c8aebc499",
+  "runtime": "canary-bench@1.0.0",
+  "suite": "S-tool",
+  "tier": 2
+ },
+ "claim_context": {
+  "model": "none-deterministic-canary",
+  "network": "offline",
+  "os": "Windows",
+  "tier": 2
+ },
+ "ended_at": "2026-11-01T09:22:37.942510+00:00",
+ "environment": {
+  "binding_set_hash": "sha256:d142a677dcfa7a8fca353d951a3cb26dbb9cb112d467f610181e1350f059bd74",
+  "containers_running": 37,
+  "context_ceiling": "n/a (no model context; deterministic canary)",
+  "cpu": "AMD Ryzen 7 7840HS w/ Radeon 780M Graphics",
+  "execution_host": "Acer reference bench (spec 12 s4.7)",
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU, 8188 MiB, 0 %, 4367 MiB",
+  "languages": [
+   "en"
+  ],
+  "load_state": "loaded: 37 containers running; Ollama resident: nomic-embed-text:latest, prism-brain:latest; GPU memory used 4367 MiB; Home API 21/22 services ok at run time",
+  "model": "none-deterministic-canary",
+  "model_digest": "sha256:45e6a7aab2e5947a23aaa186d16b1e010e3089fbf6f2335e42d8b1698b5c7981",
+  "model_version": "1.0.0",
+  "network": "offline",
+  "os": "Windows",
+  "os_version": "Microsoft Windows 11 Home build 26300",
+  "ram": "63.3 GiB",
+  "ram_load_pct": 49,
+  "resident_models": [
+   "nomic-embed-text:latest",
+   "prism-brain:latest"
+  ],
+  "runtime": "canary-bench",
+  "runtime_version": "1.0.0",
+  "suite_freeze_verified": true,
+  "tier": 2
+ },
+ "form": "shared",
+ "negotiation": {
+  "absent_optional": [],
+  "satisfied": [
+   "core_status"
+  ]
+ },
+ "outcome": {
+  "status": "ok",
+  "summary": "Run finished with status 'ok' across 18 step(s)."
+ },
+ "pack": {
+  "hash": "sha256:cdcb2ed70790d8ba9e373c1a63b24cc5402f92836a077a7b241b4b2c8aebc499",
+  "id": "canary-status",
+  "version": "0.1.0"
+ },
+ "prev_record_hash": "sha256:fcefd0e62139c6bc2b4093c9bd8e0c2da6e0b2526a574d034bd67b2a1f88f8c2",
+ "record_hash": "sha256:50572bb4574280a935f5241ea15ae3dd9156a9bce67a655af8ed320f439cd4e2",
+ "record_type": "canary",
+ "record_version": "0.1",
+ "run_id": "b764fe49-174f-4cdf-ba01-7383a8300a87",
+ "runtime": {
+  "adapter_tier": "C",
+  "name": "canary-bench",
+  "version": "1.0.0"
+ },
+ "started_at": "2026-11-01T09:22:37.897978+00:00",
+ "steps": [
+  {
+   "binding": "canary-bench-local:core_status (pack src)",
+   "capability_id": "core_status",
+   "cost_microusd": 0,
+   "input_hash": "hmac-sha256:10e350c79b59aaf5edbfbfe7088d672991ed9a44bb7f73c6ac4141ef74b56b3e",
+   "kind": "tool_call",
+   "note": "Step 1: tool call via capability 'core_status' (side effect: none).",
+   "output_hash": "hmac-sha256:587c4da048caf45e6d814ec7a332a4c64e4e27e1789c3869ffd42520f9b9048f",
+   "seq": 1,
+   "side_effect": "none"
+  },
+  {
+   "binding": "canary-bench-local:core_status (pack src)",
+   "capability_id": "core_status",
+   "cost_microusd": 0,
+   "input_hash": "hmac-sha256:10e350c79b59aaf5edbfbfe7088d672991ed9a44bb7f73c6ac4141ef74b56b3e",
+   "kind": "tool_call",
+   "note": "Step 2: tool call via capability 'core_status' (side effect: none).",
+   "output_hash": "hmac-sha256:587c4da048caf45e6d814ec7a332a4c64e4e27e1789c3869ffd42520f9b9048f",
+   "seq": 2,
+   "side_effect": "none"
+  },
+  {
+   "binding": "canary-bench-local:core_status (pack src)",
+   "capability_id": "core_status",
+   "cost_microusd": 0,
+   "input_hash": "hmac-sha256:10e350c79b59aaf5edbfbfe7088d672991ed9a44bb7f73c6ac4141ef74b56b3e",
+   "kind": "tool_call",
+   "note": "Step 3: tool call via capability 'core_status' (side effect: none).",
+   "output_hash": "hmac-sha256:587c4da048caf45e6d814ec7a332a4c64e4e27e1789c3869ffd42520f9b9048f",
+   "seq": 3,
+   "side_effect": "none"
+  },
+  {
+   "binding": "canary-bench-local:core_status (pack src)",
+   "capability_id": "core_status",
+   "cost_microusd": 0,
+   "input_hash": "hmac-sha256:10e350c79b59aaf5edbfbfe7088d672991ed9a44bb7f73c6ac4141ef74b56b3e",
+   "kind": "tool_call",
+   "note": "Step 4: tool call via capability 'core_status' (side effect: none).",
+   "output_hash": "hmac-sha256:587c4da048caf45e6d814ec7a332a4c64e4e27e1789c3869ffd42520f9b9048f",
+   "seq": 4,
+   "side_effect": "none"
+  },
+  {
+   "binding": "canary-bench-local:core_status (pack src)",
+   "capability_id": "core_status",
+   "cost_microusd": 0,
+   "input_hash": "hmac-sha256:10e350c79b59aaf5edbfbfe7088d672991ed9a44bb7f73c6ac4141ef74b56b3e",
+   "kind": "tool_call",
+   "note": "Step 5: tool call via capability 'core_status' (side effect: none).",
+   "output_hash": "hmac-sha256:587c4da048caf45e6d814ec7a332a4c64e4e27e1789c3869ffd42520f9b9048f",
+   "seq": 5,
+   "side_effect": "none"
+  },
+  {
+   "binding": "canary-bench-local:core_status (pack src)",
+   "capability_id": "core_status",
+   "cost_microusd": 0,
+   "input_hash": "hmac-sha256:10e350c79b59aaf5edbfbfe7088d672991ed9a44bb7f73c6ac4141ef74b56b3e",
+   "kind": "tool_call",
+   "note": "Step 6: tool call via capability 'core_status' (side effect: none).",
+   "output_hash": "hmac-sha256:587c4da048caf45e6d814ec7a332a4c64e4e27e1789c3869ffd42520f9b9048f",
+   "seq": 6,
+   "side_effect": "none"
+  },
+  {
+   "binding": "canary-bench-local:core_status (pack src)",
+   "capability_id": "core_status",
+   "cost_microusd": 0,
+   "input_hash": "hmac-sha256:0b5ddf48a42936e58d6499c067c1ac91ab8e20ab772c7f1b010ab80bd066c2d7",
+   "kind": "tool_call",
+   "note": "Step 7: tool call via capability 'core_status' (side effect: none).",
+   "output_hash": "hmac-sha256:c7e7383af87818a7ed327f0f914b44a321aaadc46913a30e12510dccae1bbe7c",
+   "seq": 7,
+   "side_effect": "none"
+  },
+  {
+   "binding": "canary-bench-local:core_status (pack src)",
+   "capability_id": "core_status",
+   "cost_microusd": 0,
+   "input_hash": "hmac-sha256:fda70978260a88379ec4599d560fae7110e6bdd49f8a902afa1926506d68ea90",
+   "kind": "tool_call",
+   "note": "Step 8: tool call via capability 'core_status' (side effect: none).",
+   "output_hash": "hmac-sha256:c7e7383af87818a7ed327f0f914b44a321aaadc46913a30e12510dccae1bbe7c",
+   "seq": 8,
+   "side_effect": "none"
+  },
+  {
+   "binding": "canary-bench-local:core_status (pack src)",
+   "capability_id": "core_status",
+   "cost_microusd": 0,
+   "input_hash": "hmac-sha256:475f33da1df36b1d5fc4b0c6d1bde71f90204793802d0e2ea8f5f9b10ff92701",
+   "kind": "tool_call",
+   "note": "Step 9: tool call via capability 'core_status' (side effect: none).",
+   "output_hash": "hmac-sha256:48b80073a3bbdd41192cbda7627c03e7329a37b6ec3f0c7c15ad82def89fac0a",
+   "seq": 9,
+   "side_effect": "none"
+  },
+  {
+   "binding": "canary-bench-local:core_status (pack src)",
+   "capability_id": "core_status",
+   "cost_microusd": 0,
+   "input_hash": "hmac-sha256:6f3f963050ce471c2e139f87d933a4b4a6eaa964f606750d45290117ed4ec849",
+   "kind": "tool_call",
+   "note": "Step 10: tool call via capability 'core_status' (side effect: none).",
+   "output_hash": "hmac-sha256:c7e7383af87818a7ed327f0f914b44a321aaadc46913a30e12510dccae1bbe7c",
+   "seq": 10,
+   "side_effect": "none"
+  },
+  {
+   "binding": "canary-bench-local:core_status (pack src)",
+   "capability_id": "core_status",
+   "cost_microusd": 0,
+   "input_hash": "hmac-sha256:ce75117ff2454c8f3818fb2def0ad236c98e26bd44aa13878b7a6a5ea3bab61d",
+   "kind": "tool_call",
+   "note": "Step 11: tool call via capability 'core_status' (side effect: none).",
+   "output_hash": "hmac-sha256:c6ef403aaeb38255e3c80dbfb4036bf652de48334cacefb90e5270bbb92f0ebc",
+   "seq": 11,
+   "side_effect": "none"
+  },
+  {
+   "binding": "canary-bench-local:core_status (pack src)",
+   "capability_id": "core_status",
+   "cost_microusd": 0,
+   "input_hash": "hmac-sha256:c5d925ab7594007cff860d23d9b8bb3e39b509deaaf9f558c08d0987b0262dad",
+   "kind": "tool_call",
+   "note": "Step 12: tool call via capability 'core_status' (side effect: none).",
+   "output_hash": "hmac-sha256:4ed067540195271ff457b1cc30b17f392029aa5da9f427f9ca6d51f4f69479e6",
+   "seq": 12,
+   "side_effect": "none"
+  },
+  {
+   "binding": "canary-bench-local:core_status (pack src)",
+   "capability_id": "core_status",
+   "cost_microusd": 0,
+   "input_hash": "hmac-sha256:57925e47b675406472a52122ec1d967e691a4e663cd23e2c8241e267e81d3389",
+   "kind": "tool_call",
+   "note": "Step 13: tool call via capability 'core_status' (side effect: none).",
+   "output_hash": "hmac-sha256:0c8d84a516480e2f69e88d4363184d70aa26fd7353215cde8e5ad218cd321641",
+   "seq": 13,
+   "side_effect": "none"
+  },
+  {
+   "binding": "canary-bench-local:core_status (pack src)",
+   "capability_id": "core_status",
+   "cost_microusd": 0,
+   "input_hash": "hmac-sha256:80956b895d43a9d859b83ae44b1b9edb7dce0a3aa6a3ae6980d3635bc808739a",
+   "kind": "tool_call",
+   "note": "Step 14: tool call via capability 'core_status' (side effect: none).",
+   "output_hash": "hmac-sha256:0c8d84a516480e2f69e88d4363184d70aa26fd7353215cde8e5ad218cd321641",
+   "seq": 14,
+   "side_effect": "none"
+  },
+  {
+   "binding": "canary-bench-local:core_status (pack src)",
+   "capability_id": "core_status",
+   "cost_microusd": 0,
+   "input_hash": "hmac-sha256:6aed2d1d6233b59d5d4e729432f479390b7d5b5fb9e9e3efe174950f420ad7dd",
+   "kind": "tool_call",
+   "note": "Step 15: tool call via capability 'core_status' (side effect: none).",
+   "output_hash": "hmac-sha256:0c8d84a516480e2f69e88d4363184d70aa26fd7353215cde8e5ad218cd321641",
+   "seq": 15,
+   "side_effect": "none"
+  },
+  {
+   "binding": "canary-bench-local:core_status (pack src)",
+   "capability_id": "core_status",
+   "cost_microusd": 0,
+   "input_hash": "hmac-sha256:28825fc512cb6d0f64fbcbe020412948b7eb91acc7cc7a90a601dd43a31ef468",
+   "kind": "tool_call",
+   "note": "Step 16: tool call via capability 'core_status' (side effect: none).",
+   "output_hash": "hmac-sha256:0c8d84a516480e2f69e88d4363184d70aa26fd7353215cde8e5ad218cd321641",
+   "seq": 16,
+   "side_effect": "none"
+  },
+  {
+   "binding": "canary-bench-local:core_status (pack src)",
+   "capability_id": "core_status",
+   "cost_microusd": 0,
+   "input_hash": "hmac-sha256:ee4ac74ad08ff3837c2bc8009237f22198edb13295529f8856cfde6b55494d67",
+   "kind": "tool_call",
+   "note": "Step 17: tool call via capability 'core_status' (side effect: none).",
+   "output_hash": "hmac-sha256:c6ef403aaeb38255e3c80dbfb4036bf652de48334cacefb90e5270bbb92f0ebc",
+   "seq": 17,
+   "side_effect": "none"
+  },
+  {
+   "binding": "canary-bench-local:core_status (pack src)",
+   "capability_id": "core_status",
+   "cost_microusd": 0,
+   "input_hash": "hmac-sha256:109ac3862a41af9f932f66fd69be4546c74b297c3af7397b9c794edc08cc4b15",
+   "kind": "tool_call",
+   "note": "Step 18: tool call via capability 'core_status' (side effect: none).",
+   "output_hash": "hmac-sha256:f3fdc3fd93e3fd60aa4b5f1222fa316972b1f499241072db173bfdb594139a29",
+   "seq": 18,
+   "side_effect": "none"
+  }
+ ],
+ "verifier": {
+  "author": "Thomas Lincoln Crockett / TLG3D Labs, LLC",
+  "author_signature": "ed25519:author-tlg3d-labs:nk+oJja1CTqSvA5fR7sWwWEws8Yqo+vnaG/4MVmNh1e1w5zE7Yhvx9lTYMtpQBpGC9v2Bix4ug40cQqyRddsBQ==",
+  "canary": {
+   "expected_pass": 18,
+   "met_expectation": true,
+   "suite_freeze_verified": true
+  },
+  "grade": "self-tested",
+  "per_case": [
+   {
+    "id": "ST-01",
+    "pass": true,
+    "why": "ok"
+   },
+   {
+    "id": "ST-02",
+    "pass": true,
+    "why": "ok"
+   },
+   {
+    "id": "ST-03",
+    "pass": true,
+    "why": "ok"
+   },
+   {
+    "id": "ST-04",
+    "pass": true,
+    "why": "ok"
+   },
+   {
+    "id": "ST-05",
+    "pass": true,
+    "why": "ok"
+   },
+   {
+    "id": "ST-06",
+    "pass": true,
+    "why": "ok"
+   },
+   {
+    "id": "ST-07",
+    "pass": true,
+    "why": "clean error"
+   },
+   {
+    "id": "ST-08",
+    "pass": true,
+    "why": "clean error"
+   },
+   {
+    "id": "ST-09",
+    "pass": true,
+    "why": "clean error"
+   },
+   {
+    "id": "ST-10",
+    "pass": true,
+    "why": "clean error"
+   },
+   {
+    "id": "ST-11",
+    "pass": true,
+    "why": "clean error"
+   },
+   {
+    "id": "ST-12",
+    "pass": true,
+    "why": "clean error"
+   },
+   {
+    "id": "ST-13",
+    "pass": true,
+    "why": "clean error"
+   },
+   {
+    "id": "ST-14",
+    "pass": true,
+    "why": "clean error"
+   },
+   {
+    "id": "ST-15",
+    "pass": true,
+    "why": "clean error"
+   },
+   {
+    "id": "ST-16",
+    "pass": true,
+    "why": "clean error"
+   },
+   {
+    "id": "ST-17",
+    "pass": true,
+    "why": "clean error"
+   },
+   {
+    "id": "ST-18",
+    "pass": true,
+    "why": "clean error"
+   }
+  ],
+  "score": {
+   "n": 18,
+   "pass": 18,
+   "pct": 100.0
+  },
+  "scorer_version": "1.0.0",
+  "suite": "S-tool",
+  "suite_hash": "sha256:85bac585233de4695e6ee559ca5b4f59b734cfc6b9478fb58c7c51aaeef523db",
+  "suite_version": "1.1.0"
+ }
+}

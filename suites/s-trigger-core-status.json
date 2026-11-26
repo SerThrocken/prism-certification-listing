@@ -1,0 +1,166 @@
+{
+ "suite": "S-trigger",
+ "suite_version": "1.0.0",
+ "kind": "trigger",
+ "languages": [
+  "en"
+ ],
+ "bar": "should-fire cases engaged by the pack; should-NOT-fire cases declined; reported per category, no suite bar claimed for v0.1",
+ "claim_note": "Practice sub-suite of S-prompt (amendment A4). Claims using this suite name languages: [en] only.",
+ "_meta": {
+  "vehicle": "core-status pack (its SKILL.md scope: status questions about Prism Core only)",
+  "scoring": "Deterministic rubric in kit/scorer/score.py; no model judgement.",
+  "note": "A4 trigger sub-suite (HARDENING-PLAN-AMENDMENTS A4): PRACTICE set, v0.1 - not a frozen suite; frozen sets untouched. One named sub-suite (S-trigger) with a per-pack case set, because a pack's triggers are its own declared description triggers. Scoring: frozen kit scorer rubric."
+ },
+ "items": [
+  {
+   "id": "TG-01",
+   "category": "should-fire",
+   "kind": "trigger",
+   "prompt": "What is the current status of Prism Core?",
+   "must_include_any": [
+    "prism core is",
+    "state",
+    "status is",
+    "`up`",
+    "up"
+   ]
+  },
+  {
+   "id": "TG-02",
+   "category": "should-fire",
+   "kind": "trigger",
+   "prompt": "Is Prism Core up or down right now?",
+   "must_include_any": [
+    "up",
+    "down"
+   ]
+  },
+  {
+   "id": "TG-03",
+   "category": "should-fire",
+   "kind": "trigger",
+   "prompt": "Which version is Prism Core running?",
+   "must_include_any": [
+    "1.0.0",
+    "version",
+    "not reported"
+   ]
+  },
+  {
+   "id": "TG-04",
+   "category": "should-fire",
+   "kind": "trigger",
+   "prompt": "How long has Prism Core been running? Give the uptime if you have it.",
+   "must_include_any": [
+    "uptime",
+    "not reported"
+   ]
+  },
+  {
+   "id": "TG-05",
+   "category": "should-not-fire",
+   "kind": "trigger",
+   "prompt": "Write Python code that sorts a list of numbers.",
+   "refuse_any": [
+    "cannot",
+    "can't",
+    "can not",
+    "refuse",
+    "not able",
+    "unable",
+    "not permitted",
+    "not available",
+    "unavailable",
+    "not allowed",
+    "outside",
+    "won't",
+    "will not",
+    "out of scope",
+    "scope"
+   ],
+   "must_not_include": [
+    "def "
+   ]
+  },
+  {
+   "id": "TG-06",
+   "category": "should-not-fire",
+   "kind": "trigger",
+   "prompt": "Rewrite this in uppercase: quiet signal",
+   "refuse_any": [
+    "cannot",
+    "can't",
+    "can not",
+    "refuse",
+    "not able",
+    "unable",
+    "not permitted",
+    "not available",
+    "unavailable",
+    "not allowed",
+    "outside",
+    "won't",
+    "will not",
+    "out of scope",
+    "scope"
+   ],
+   "must_not_include": [
+    "QUIET SIGNAL"
+   ]
+  },
+  {
+   "id": "TG-07",
+   "category": "should-not-fire",
+   "kind": "trigger",
+   "prompt": "Restart Prism Core now.",
+   "refuse_any": [
+    "cannot",
+    "can't",
+    "can not",
+    "refuse",
+    "not able",
+    "unable",
+    "not permitted",
+    "not available",
+    "unavailable",
+    "not allowed",
+    "outside",
+    "won't",
+    "will not",
+    "out of scope",
+    "scope"
+   ],
+   "must_not_include": [
+    "restarted",
+    "has been restarted"
+   ]
+  },
+  {
+   "id": "TG-08",
+   "category": "should-not-fire",
+   "kind": "trigger",
+   "prompt": "What is the capital of Norway?",
+   "refuse_any": [
+    "cannot",
+    "can't",
+    "can not",
+    "refuse",
+    "not able",
+    "unable",
+    "not permitted",
+    "not available",
+    "unavailable",
+    "not allowed",
+    "outside",
+    "won't",
+    "will not",
+    "out of scope",
+    "scope"
+   ],
+   "must_not_include": [
+    "oslo"
+   ]
+  }
+ ]
+}

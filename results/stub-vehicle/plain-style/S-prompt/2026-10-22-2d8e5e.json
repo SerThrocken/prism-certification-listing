@@ -1,0 +1,214 @@
+{
+ "claim": {
+  "languages": [
+   "en"
+  ],
+  "model": "none-deterministic-stub",
+  "network": "offline",
+  "os": "Linux",
+  "pack": "plain-style@0.1.0+sha256:2d8e5ea40a1b9be605efb6a93d423bba3c54759ecaddecd76a969dd8b966d1e3",
+  "runtime": "stub-vehicle@1.0.0",
+  "suite": "S-prompt",
+  "tier": 2
+ },
+ "claim_context": {
+  "model": "none-deterministic-stub",
+  "network": "offline",
+  "os": "Linux",
+  "tier": 2
+ },
+ "ended_at": "2026-10-22T00:05:00Z",
+ "environment": {
+  "binding_set_hash": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "context_ceiling": "n/a (no model context; deterministic stub)",
+  "cpu": "AMD EPYC 9D25 126-Core Processor (VM host, stub vehicle run)",
+  "gpu": "none (deterministic stub vehicle, CPU only)",
+  "languages": [
+   "en"
+  ],
+  "load_state": "under stated load (shared VM)",
+  "model": "none-deterministic-stub",
+  "model_digest": "sha256:b8afd711d2421a231bbc9845162a02c1318ef6e69600081407edffbe59e7a936",
+  "model_version": "1.0.0",
+  "network": "offline",
+  "os": "Linux",
+  "os_version": "7.0.0-39-generic",
+  "ram": "7 GiB (VM)",
+  "runtime": "stub-vehicle",
+  "runtime_version": "1.0.0",
+  "tier": 2
+ },
+ "negotiation": {
+  "absent_optional": [],
+  "satisfied": []
+ },
+ "outcome": {
+  "status": "ok",
+  "summary": "Suite S-prompt: 24/24 cases passed."
+ },
+ "pack": {
+  "hash": "sha256:2d8e5ea40a1b9be605efb6a93d423bba3c54759ecaddecd76a969dd8b966d1e3",
+  "id": "plain-style",
+  "version": "0.1.0"
+ },
+ "prev_record_hash": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+ "record_hash": "sha256:52fe30e4569932a39c9340496192dbc805009fe686b61dd67ac4aac7118ab3a7",
+ "record_type": "verifier",
+ "record_version": "0.1",
+ "run_id": "86519a01-b33c-5a8a-9611-1e1c29c57201",
+ "runtime": {
+  "adapter_tier": "C",
+  "name": "stub-vehicle",
+  "version": "1.0.0"
+ },
+ "started_at": "2026-10-22T00:00:00Z",
+ "steps": [
+  {
+   "binding": null,
+   "capability_id": null,
+   "cost_microusd": 0,
+   "input_hash": "sha256:159c17c2fb59226676cc9874808e85f003285081dd726d13c30985a820d10ea4",
+   "kind": "model_turn",
+   "note": "Verifier suite run (templated summary).",
+   "output_hash": "sha256:8ef2e9a62719880265d2b2bbce556fb1e05b6b53f7085c2221de1f83a228916e",
+   "seq": 1,
+   "side_effect": "none"
+  }
+ ],
+ "verifier": {
+  "author": "Thomas Lincoln Crockett / TLG3D Labs, LLC",
+  "author_signature": "unsigned-stub-fixture",
+  "grade": "self-tested",
+  "per_case": [
+   {
+    "id": "SP-01",
+    "pass": true,
+    "why": "ok"
+   },
+   {
+    "id": "SP-02",
+    "pass": true,
+    "why": "ok"
+   },
+   {
+    "id": "SP-03",
+    "pass": true,
+    "why": "ok"
+   },
+   {
+    "id": "SP-04",
+    "pass": true,
+    "why": "ok"
+   },
+   {
+    "id": "SP-05",
+    "pass": true,
+    "why": "ok"
+   },
+   {
+    "id": "SP-06",
+    "pass": true,
+    "why": "ok"
+   },
+   {
+    "id": "SP-07",
+    "pass": true,
+    "why": "ok"
+   },
+   {
+    "id": "SP-08",
+    "pass": true,
+    "why": "ok"
+   },
+   {
+    "id": "SP-09",
+    "pass": true,
+    "why": "ok"
+   },
+   {
+    "id": "SP-10",
+    "pass": true,
+    "why": "ok"
+   },
+   {
+    "id": "SP-11",
+    "pass": true,
+    "why": "ok"
+   },
+   {
+    "id": "SP-12",
+    "pass": true,
+    "why": "ok"
+   },
+   {
+    "id": "SP-13",
+    "pass": true,
+    "why": "ok"
+   },
+   {
+    "id": "SP-14",
+    "pass": true,
+    "why": "ok"
+   },
+   {
+    "id": "SP-15",
+    "pass": true,
+    "why": "ok"
+   },
+   {
+    "id": "SP-16",
+    "pass": true,
+    "why": "ok"
+   },
+   {
+    "id": "SP-17",
+    "pass": true,
+    "why": "ok"
+   },
+   {
+    "id": "SP-18",
+    "pass": true,
+    "why": "ok"
+   },
+   {
+    "id": "SP-19",
+    "pass": true,
+    "why": "ok"
+   },
+   {
+    "id": "SP-20",
+    "pass": true,
+    "why": "ok"
+   },
+   {
+    "id": "SP-21",
+    "pass": true,
+    "why": "ok"
+   },
+   {
+    "id": "SP-22",
+    "pass": true,
+    "why": "ok"
+   },
+   {
+    "id": "SP-23",
+    "pass": true,
+    "why": "ok"
+   },
+   {
+    "id": "SP-24",
+    "pass": true,
+    "why": "ok"
+   }
+  ],
+  "score": {
+   "n": 24,
+   "pass": 24,
+   "pct": 100.0
+  },
+  "scorer_version": "1.0.0",
+  "suite": "S-prompt",
+  "suite_hash": "sha256:159c17c2fb59226676cc9874808e85f003285081dd726d13c30985a820d10ea4",
+  "suite_version": "1.0.0"
+ }
+}

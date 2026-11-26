@@ -1,0 +1,217 @@
+{
+ "claim": {
+  "languages": [
+   "en"
+  ],
+  "model": "none",
+  "network": "lan",
+  "os": "Windows",
+  "pack": "prism-core@1.0.0-phase1+sha256:85ffe14351389fa3c76a6de7a0f180e6996cf6cdb03fd72f41183a2dd0cc3489",
+  "runtime": "prism-core@1.0.0-phase1",
+  "suite": "s-death",
+  "tier": 2
+ },
+ "claim_context": {
+  "model": "none",
+  "network": "lan",
+  "os": "Windows",
+  "tier": 2
+ },
+ "drill": {
+  "actor": "thomas",
+  "checks_basis": {
+   "i": "Nov 11 post-resume /healthz 200, same boot 816d541c-ad44-4b77-8029-e3a379f5af92, no process restart \u2014 ~/memory/2026-11-11.md + ~/workspace/decisions.md (W6 PANIC DRILL RUN). No standalone audit of the Nov 11 drill run exists; the attestation audit is the independent verification.",
+   "ii": "Authenticated /status reads in the audited (iv) records \u2014 Nov 17: panic false, panic_state armed, Tier-2 available, router_mode squad-b; Nov 18 re-attempt preconditions: same. The Nov 11 filed record states recovery verified but does not itemize /status fields. read_only 'as before' is UNVERIFIED \u2014 no pre-drill read_only baseline and no post-drill read_only value in any filed record (same honesty note as the Nov 8 record).",
+   "iii": "Nov 11 post-resume state intact \u2014 tasks.db 931 unchanged (826 completed / 102 failed / 3 cancelled), panic flag armed, registry 9 owner rows enabled, no freeze markers \u2014 ~/memory/2026-11-11.md + ~/workspace/decisions.md. Open-faults itemization is not in the filed Nov 11 record, so the 'no new open faults' sub-item is UNVERIFIED.",
+   "iv": "Nov 18 re-attempt, task 86dfa928-5d55-46f7-a166-c36f7c8f2856, completed, tier_pinned 2, route aistudio-gemini-3-5-flash-lite, spend $0.0069034 \u2014 certification/w6/DRILL-RUN-2026-11-11-CHECK-IV-REATTEMPT.md + audit VERDICT: PASS (line 23). The (iv) check did not pass during the Nov 11 window; it passed Nov 18 after a route re-point (routes.yaml + allowlist.py) and a core restart (boot 6cb24120-9d5e-456d-8ac1-0e81a874e748).",
+   "v": "Pre-drill snapshot filed (certification/w6/evidence/drill-prep/acer-preflight-20261111.json + home-api-preflight-20261111.json: 22 services total, 21 ok, wake standby); post-drill match verified by Prism read-only over SSH per the filed Nov 11 records (memory log + decisions.md: 21 ok + wake standby, matching pre-drill). No separate post-drill snapshot file is filed."
+  },
+  "engaged_at": "2026-11-11T19:22:16+00:00",
+  "engaged_ledger_event": "2026-11-11T19:22:44.795817+00:00",
+  "export_zip_sha256": "sha256:95dbe569ef39e6d8e023f5b328f31c09eccf0261f1eec8bb9c9c0b26b001d36f",
+  "label": "S-death attestation \u2014 Prism Core \u2192 standalone export; drill, self-tested",
+  "limits": "The Nov 11 drill run has no standalone audited record; its contemporaneous record is ~/memory/2026-11-11.md + ~/workspace/decisions.md (Prism's, agreeing on all values). Resume times are the three panic-resume ledger events in order (fixed resume order); the final event matches the flag cleared_at. The engaged ledger-event time is the 'panic-drill' ledger event (~28s after the engage). Check (iv) passed Nov 18 via re-attempt, not during the Nov 11 window. Listing regeneration (listing.json/listing.md) is a separate step, not done here.",
+  "recovery_checks": "i, ii, iii, iv, v PASS",
+  "restart_pair": "skipped: no auditor requirement on record",
+  "resumed_at": {
+   "core-services": "2026-11-11T19:24:51.685623+00:00",
+   "jobs-watchers": "2026-11-11T19:25:25.612599+00:00",
+   "outbound-queues": "2026-11-11T19:25:56.353168+00:00"
+  },
+  "tier2_route": "aistudio-gemini-3-5-flash-lite",
+  "tier2_spend_usd": 0.0069034,
+  "tier2_task_id": "86dfa928-5d55-46f7-a166-c36f7c8f2856"
+ },
+ "ended_at": "2026-11-18T18:38:36.426674+00:00",
+ "environment": {
+  "source": {
+   "adapter_tier": "A",
+   "boot_id": "816d541c-ad44-4b77-8029-e3a379f5af92",
+   "cpu": "AMD Ryzen 7 7840HS w/ Radeon 780M Graphics",
+   "execution_host": "Acer reference bench (spec 12 s4.7)",
+   "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU, 8188 MiB",
+   "load_state": "Core idle, zero live tasks at engage; tasks.db 931 (826 completed / 102 failed / 3 cancelled); Home API 22 services (21 ok, wake standby) at run time",
+   "model": "vertex-gemini-2-5-flash",
+   "model_role": "check (iv) Tier-2 route at drill time; halt, resume and parse used no model. The (iv) PASS came Nov 18 via re-attempt on aistudio-gemini-3-5-flash-lite after the Nov 17 attempt failed on this route (HTTP 400) and the route was re-pointed",
+   "network": "lan",
+   "os": "Windows",
+   "os_version": "Microsoft Windows 11 Home build 26300",
+   "ram": "64 GiB DDR5",
+   "runtime": "prism-core",
+   "runtime_version": "1.0.0-phase1",
+   "tier": 2
+  },
+  "target": {
+   "execution_host": "this VM (Linux, Python 3.12 stdlib parser)",
+   "load_state": "parse of the off-Acer live export copy while halted; exit 0, 10/10 checks, 696 records, hash chain verifies",
+   "model": "none",
+   "model_note": "the parse is deterministic; no model in the parse path",
+   "network": "offline",
+   "os": "Linux",
+   "runtime": "standalone_parse_core.py"
+  }
+ },
+ "form": "shared",
+ "negotiation": {
+  "absent_optional": [],
+  "satisfied": []
+ },
+ "outcome": {
+  "status": "ok",
+  "summary": "Run finished with status 'ok' across 10 step(s)."
+ },
+ "pack": {
+  "hash": "sha256:85ffe14351389fa3c76a6de7a0f180e6996cf6cdb03fd72f41183a2dd0cc3489",
+  "id": "prism-core",
+  "version": "1.0.0-phase1"
+ },
+ "prev_record_hash": "sha256:6331ba57fccba5d48a5cf8cc8d72865a9369edd3e84b5de340eac3c7e43e2497",
+ "record_hash": "sha256:e76485e0cbc3713956b71eb0a262ba7afae368f675a36d9406c27b4db8017b49",
+ "record_type": "s-death",
+ "record_version": "0.1",
+ "run_id": "5eadc881-11f1-4db7-a561-f1eda1253928",
+ "runtime": {
+  "adapter_tier": "A",
+  "name": "prism-core",
+  "version": "1.0.0-phase1"
+ },
+ "started_at": "2026-11-11T19:22:16+00:00",
+ "steps": [
+  {
+   "binding": "",
+   "capability_id": "panic-engage",
+   "cost_microusd": 0,
+   "input_hash": null,
+   "kind": "human_step",
+   "note": "Step 1: human step via capability 'panic-engage' (side effect: none).",
+   "output_hash": null,
+   "seq": 1,
+   "side_effect": "none"
+  },
+  {
+   "binding": "",
+   "capability_id": "standalone-parse",
+   "cost_microusd": 0,
+   "input_hash": null,
+   "kind": "tool_call",
+   "note": "Step 2: tool call via capability 'standalone-parse' (side effect: none).",
+   "output_hash": null,
+   "seq": 2,
+   "side_effect": "none"
+  },
+  {
+   "binding": "",
+   "capability_id": "panic-resume",
+   "cost_microusd": 0,
+   "input_hash": null,
+   "kind": "human_step",
+   "note": "Step 3: human step via capability 'panic-resume' (side effect: none).",
+   "output_hash": null,
+   "seq": 3,
+   "side_effect": "none"
+  },
+  {
+   "binding": "",
+   "capability_id": "panic-resume",
+   "cost_microusd": 0,
+   "input_hash": null,
+   "kind": "human_step",
+   "note": "Step 4: human step via capability 'panic-resume' (side effect: none).",
+   "output_hash": null,
+   "seq": 4,
+   "side_effect": "none"
+  },
+  {
+   "binding": "",
+   "capability_id": "panic-resume",
+   "cost_microusd": 0,
+   "input_hash": null,
+   "kind": "human_step",
+   "note": "Step 5: human step via capability 'panic-resume' (side effect: none).",
+   "output_hash": null,
+   "seq": 5,
+   "side_effect": "none"
+  },
+  {
+   "binding": "",
+   "capability_id": "recovery-check",
+   "cost_microusd": 0,
+   "input_hash": null,
+   "kind": "tool_call",
+   "note": "Step 6: tool call via capability 'recovery-check' (side effect: none).",
+   "output_hash": null,
+   "seq": 6,
+   "side_effect": "none"
+  },
+  {
+   "binding": "",
+   "capability_id": "recovery-check",
+   "cost_microusd": 0,
+   "input_hash": null,
+   "kind": "tool_call",
+   "note": "Step 7: tool call via capability 'recovery-check' (side effect: none).",
+   "output_hash": null,
+   "seq": 7,
+   "side_effect": "none"
+  },
+  {
+   "binding": "",
+   "capability_id": "recovery-check",
+   "cost_microusd": 0,
+   "input_hash": null,
+   "kind": "tool_call",
+   "note": "Step 8: tool call via capability 'recovery-check' (side effect: none).",
+   "output_hash": null,
+   "seq": 8,
+   "side_effect": "none"
+  },
+  {
+   "binding": "",
+   "capability_id": "recovery-check",
+   "cost_microusd": 0,
+   "input_hash": null,
+   "kind": "tool_call",
+   "note": "Step 9: tool call via capability 'recovery-check' (side effect: none).",
+   "output_hash": null,
+   "seq": 9,
+   "side_effect": "none"
+  },
+  {
+   "binding": "",
+   "capability_id": "chat",
+   "cost_microusd": 6903,
+   "input_hash": null,
+   "kind": "model_turn",
+   "note": "Step 10: model turn.",
+   "output_hash": null,
+   "seq": 10,
+   "side_effect": "none"
+  }
+ ],
+ "verifier": {
+  "author": "Thomas Lincoln Crockett / TLG3D Labs, LLC",
+  "grade": "self-tested",
+  "label": "S-death attestation \u2014 Prism Core \u2192 standalone export; drill, self-tested",
+  "note": "S-death is not a section 4.1 claim. Verified grade requires the 2-of-3 bench signing whose holders are nominated, not enrolled; no author signature is present because no signing key exists."
+ }
+}
